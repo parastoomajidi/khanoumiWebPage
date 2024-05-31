@@ -1,0 +1,6 @@
+{
+  "devDependencies": {
+    "@tailwindcss/aspect-ratio": "^0.4.2",
+    "tailwind-scrollbar": "^3.1.0"
+  }
+}

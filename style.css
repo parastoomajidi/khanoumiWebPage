@@ -1,0 +1,10 @@
+
+.warpper{ 
+    max-height: 150px;
+    border: 1px solid #ddd;
+    display: flex;
+    flex-wrap: wrap;
+    overflow-x: auto;
+
+}
+
