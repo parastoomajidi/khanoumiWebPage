@@ -1,7 +1,6 @@
 
 .warpper{ 
     max-height: 170px;
-    border: 1px solid #ddd;
     padding: 8px;
     display: flex;
     overflow: auto;

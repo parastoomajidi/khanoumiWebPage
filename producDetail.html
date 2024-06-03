@@ -9,330 +9,333 @@
     crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
 <body>
-    <section>
-        <div class="border w-full h-20 flex gap-4 py-4 justify-around ">
-            <!--- Left part of header--->
-            <div class="flex gap-4">
-                <!---- Carts -->
-                <div>
-                    <i class="fa-brands fa-opencart text-black-600 text-3xl"></i>
-                </div>
-                <!---- Login's Button-->
-                <div>
-                    <button type="button" class="text-lg rounded-lg h-10 w-24 border-solid border-2 border-pink-600 text-pink-600 pointer-events-auto" >ورود
-                        <i class="fa-solid fa-arrow-right-to-bracket"></i>
-                    </button>
-                </div>
-            </div>
-            <!--- Right part of header--->
-            <div class="flex gap-4">
-                    <!---- Search Box-->
-                <form>
-                    <div class="relative">
-                        <input type="search" name="search" id="seach" placeholder="جست و جو کردن در همه محصولات خانومی" class="w-full h-10 block  p-4 ps-10 border rounded-lg bg-gray-100  ">
-                    <div class="absolute flex inset-y-0 start-0 items-center ps-3 pointer-events-non"><i class="fa-solid fa-magnifying-glass"></i></div>
+    <section class="max-w-7xl mx-auto">
+        <section>
+            <div class="border w-full h-20 flex gap-4 py-4 justify-around ">
+                <!--- Left part of header--->
+                <div class="flex gap-4">
+                    <!---- Carts -->
+                    <div>
+                        <i class="fa-brands fa-opencart text-black-600 text-3xl"></i>
                     </div>
-                </form>
-                <!---- Brand Logo ---->
-                <img src="img/logo.svg" alt="khanumiLogo" class="h-12 w-20">
-
-            </div>
-        </div>
-    </section>
-    <!--- Menu --->
-    <section>
-        <div>
-            <div class="flex w-full h-12 bg-gray-900 justify-around ">
-                <ul class="flex text-white text-xs justify-end gap-4 items-center lg:font-normal lg:text-right  lg:text-sm">
-                    <li>مجله خانومی</li>
-                    <li>مکمل غذایی و دارویی</li>
-                    <li>لوازم برقی شخصی</li>
-                    <li> اقایان</li>
-                    <li>عطر و ادکلن</li>
-                    <li>بهداشت شخصی</li>
-                    <li>مراقبت پوست</li>
-                    <li>مراقبت  مو</li>
-                    <li>آرایشی</li>
-                    <li>برند ها</li>
-                    <div class="flex gap-2 items-center text-white hover:text-pink-600">
-                        <li>پیشنهاد ویژه</li>
-                        <i class="fa-solid fa-crown"></i>
-                    </div>
-                </ul>
-           
-            </div>
-        </div>
-    </section>
-    <!--- Card Detail Shairing  --->
-   <section class="flex justify-end p-4">
-     <div >
-        <ul class="text-gray-600 flex text-xs ">
-            <div class="flex gap-2 items-center">
-                <i class="fa-solid fa-angle-left"></i>
-                <li><a href="#">آرایشی</a></li>
-            </div>
-            <div class="flex gap-2 items-center">
-                <i class="fa-solid fa-angle-left"></i>
-                <li><a href="#">کرم بی‌بی و سی سی</a></li>
-            </div>
-            <div class="flex gap-2 items-center">
-                <i class="fa-solid fa-angle-left"></i>
-                <li><a href="#">آرایش صورت</a></li>
-            </div>
-        </ul>
-     </div>
-   </section>
-   <section>
-       <div class="grid grid-row-3 lg:flex lg:justify-between lg:p-4 ">
-            <!--- Img Of Product --->
-            <div class=" grid cols-row-1 lg:items-left ">
-                <!--img 1-->
-                <div class="h-72 w-72  border">
-                    <div class="aspect-h-16 aspect-w-16">
-                        <img src="img/khanoumi-pd1.jpg" alt="">
+                    <!---- Login's Button-->
+                    <div>
+                        <button type="button" class="text-lg rounded-lg h-10 w-24 border-solid border-2 border-pink-600 text-pink-600 pointer-events-auto" >ورود
+                            <i class="fa-solid fa-arrow-right-to-bracket"></i>
+                        </button>
                     </div>
                 </div>
-                <!--img 1-->
-                <!-- <div class="h-72 w-72 border">
-                    <div class="aspect-h-16 aspect-w-16">
-                        <img src="img/khanoumi-pd1.jpg" alt="">
-                    </div>
-                </div> -->
+                <!--- Right part of header--->
+                <div class="flex gap-4">
+                        <!---- Search Box-->
+                    <form>
+                        <div class="relative">
+                            <input type="search" name="search" id="seach" placeholder="جست و جو کردن در همه محصولات خانومی" class="w-full h-10 block  p-4 ps-10 border rounded-lg bg-gray-100  ">
+                        <div class="absolute flex inset-y-0 start-0 items-center ps-3 pointer-events-non"><i class="fa-solid fa-magnifying-glass"></i></div>
+                        </div>
+                    </form>
+                    <!---- Brand Logo ---->
+                    <img src="img/logo.svg" alt="khanumiLogo" class="h-12 w-20">
+    
+                </div>
             </div>
-            <!--- info of product ---->
+        </section>
+        <!--- Menu --->
+        <section>
             <div>
-                <section class="flex justify-between p-4 gap-4">
-                    <div class="flex gap-4">
-                        <i class="fa-regular fa-heart"></i>
-                        <i class="fa-solid fa-share-nodes"></i>  
-                     </div>
-                     <div >
-                        <ul class="text-gray-600 flex text-xs ">
-                            <div class="flex gap-2 items-center">
-                                <i class="fa-solid fa-angle-left"></i>
-                                <li><a href="#">آرایشی</a></li>
-                            </div>
-                            <div class="flex gap-2 items-center">
-                                <i class="fa-solid fa-angle-left"></i>
-                                <li><a href="#">کرم بی‌بی و سی سی</a></li>
-                            </div>
-                            <div class="flex gap-2 items-center">
-                                <i class="fa-solid fa-angle-left"></i>
-                                <li><a href="#">آرایش صورت</a></li>
-                            </div>
-                        </ul>
-                     </div>
-                   </section>
+                <div class="flex w-full h-12 bg-gray-900 justify-around ">
+                    <ul class="flex text-white text-xs justify-end gap-4 items-center lg:font-normal lg:text-right  lg:text-sm">
+                        <li>مجله خانومی</li>
+                        <li>مکمل غذایی و دارویی</li>
+                        <li>لوازم برقی شخصی</li>
+                        <li> اقایان</li>
+                        <li>عطر و ادکلن</li>
+                        <li>بهداشت شخصی</li>
+                        <li>مراقبت پوست</li>
+                        <li>مراقبت  مو</li>
+                        <li>آرایشی</li>
+                        <li>برند ها</li>
+                        <div class="flex gap-2 items-center text-white hover:text-pink-600">
+                            <li>پیشنهاد ویژه</li>
+                            <i class="fa-solid fa-crown"></i>
+                        </div>
+                    </ul>
+               
+                </div>
             </div>
-            <!---- info Sharing ---->
-            <div class="text-right p-4 ">
-                <h1>سی سی کرم فارماسی حجم 50 میل مناسب انواع پوست</h1>
-                <!-- rate, comment, like-->
-                <div class="flex items-center gap-4 py-4 justify-end text-sm ">
+        </section>
+        <!--- Card Detail Shairing  --->
+       <section class="flex justify-end p-4">
+         <div >
+            <ul class="text-gray-600 flex text-xs ">
+                <div class="flex gap-2 items-center">
+                    <i class="fa-solid fa-angle-left"></i>
+                    <li><a href="#">آرایشی</a></li>
+                </div>
+                <div class="flex gap-2 items-center">
+                    <i class="fa-solid fa-angle-left"></i>
+                    <li><a href="#">کرم بی‌بی و سی سی</a></li>
+                </div>
+                <div class="flex gap-2 items-center">
+                    <i class="fa-solid fa-angle-left"></i>
+                    <li><a href="#">آرایش صورت</a></li>
+                </div>
+            </ul>
+         </div>
+       </section>
+       <section>
+           <div class="grid grid-row-3 lg:flex lg:justify-between lg:p-4 ">
+                <!--- Img Of Product --->
+                <div class=" grid cols-row-1 lg:items-left ">
+                    <!--img 1-->
+                    <div class="h-72 w-72  border">
+                        <div class="aspect-h-16 aspect-w-16">
+                            <img src="img/khanoumi-pd1.jpg" alt="">
+                        </div>
+                    </div>
+                    <!--img 1-->
+                    <!-- <div class="h-72 w-72 border">
+                        <div class="aspect-h-16 aspect-w-16">
+                            <img src="img/khanoumi-pd1.jpg" alt="">
+                        </div>
+                    </div> -->
+                </div>
+                <!--- info of product ---->
+                <div>
+                    <section class="flex justify-between p-4 gap-4">
+                        <div class="flex gap-4">
+                            <i class="fa-regular fa-heart"></i>
+                            <i class="fa-solid fa-share-nodes"></i>  
+                         </div>
+                         <div >
+                            <ul class="text-gray-600 flex text-xs ">
+                                <div class="flex gap-2 items-center">
+                                    <i class="fa-solid fa-angle-left"></i>
+                                    <li><a href="#">آرایشی</a></li>
+                                </div>
+                                <div class="flex gap-2 items-center">
+                                    <i class="fa-solid fa-angle-left"></i>
+                                    <li><a href="#">کرم بی‌بی و سی سی</a></li>
+                                </div>
+                                <div class="flex gap-2 items-center">
+                                    <i class="fa-solid fa-angle-left"></i>
+                                    <li><a href="#">آرایش صورت</a></li>
+                                </div>
+                            </ul>
+                         </div>
+                       </section>
+                </div>
+                <!---- info Sharing ---->
+                <div class="text-right p-4 ">
+                    <h1>سی سی کرم فارماسی حجم 50 میل مناسب انواع پوست</h1>
+                    <!-- rate, comment, like-->
+                    <div class="flex items-center gap-4 py-4 justify-end text-sm ">
+                        <div class="flex items-center gap-2">
+                            <h2>232 دیدگاه</h2>
+                            <i class="fa-solid fa-message"></i>
+                        </div>
+                        <div class="flex items-center gap-2">
+                            <h2>1010</h2>
+                            <i class="fa-solid fa-heart"></i>
+                        </div>
+                        <div class="flex items-center gap-2">
+                            <h2>2.7</h2>
+                            <i class="fa-solid fa-star "></i>
+                        </div>
+                    </div>
+                    <div class="flex justify-end">
+                        <h2>50ml</h2>
+                        <h2> :سایز </h2>
+                    </div>
+                    <div>
+                        <h2> :رنگ</h2>
+                        <div class="flex gap-2 justify-end py-2 text-3xl">
+                            <i class="fa-solid fa-circle text-red-500"></i>
+                            <i class="fa-solid fa-circle text-yellow-300"></i>
+                            <i class="fa-solid fa-circle text-pink-400"></i>
+                            <i class="fa-solid fa-circle text-pink-800"></i>
+                        </div>
+                    </div>
+                </div>
+                <!-- Info -->
+                <div class="grid text-sm text-gray-600  ">
+                <!-- Garanthy  -->
+               <div>
+                     <!-- Send Info -->
+                     <div class="w-6/6 h-12 border rounded-lg m-2 shadow-md lg:border-none lg:shadow-none   ">
+                        <div class="flex items-center gap-4 p-3 justify-end">
+                            <h2>ارسال از 3 روز دیگر</h2>
+                            <i class="fa-solid fa-truck"></i>
+                        </div>
+                    </div>
+                         <!-- Backup Info-->
+                    <div class="cols-span-1 w-6/6 h-auto border rounded-lg m-2 p-2 shadow-md lg:border-none lg:shadow-none  ">
+                        <div class="justify-end">
+                            <div class="flex items-center gap-4 justify-end">
+                                <h2>ضمانت اصالت کالا </h2>
+                                <i class="fa-solid fa-award"></i>
+                            </div>
+                            <div class="flex items-center gap-4 justify-end">
+                                <h2>ارسال رایگان با خرید بیش از 850 هزار تومان</h2>
+                                <i class="fa-solid fa-award"></i>
+                            </div>
+                            <div class="flex items-center gap-4 justify-end">
+                                <h2>بازگشت کالا تا ۷ روز طبق شرایط مرجوعی</h2>
+                                <i class="fa-solid fa-award"></i>
+                            </div>
+                        </div>
+                    </div>
+               </div>
+    
+                </div>
+            </div>
+        </section>
+        <!-- Introduce Product-->
+        <section>
+            <div class="w-6/6 h-auto border p-2 m-2 text-right rounded-lg">
+                <h1><strong>معرفی محصول</strong></h1>
+                <p >معرفی سی سی کرم فارماسی</p>
+                <p class="text-xs text-gray-600">ی سی کرم ها محصولاتی بسیار ملایم و سبک با خواص بسیار مفید برای پوست می‌باشند. این محصول پوشش بسیار خوبی بر روی پوست داشته و عیوب پوست را کاملا می‌پوشاند. روغن ماکادامیای موجود در این کرم برند معتبر فارماسی، پوست را در تمام روز مرطوب نگاه می‌دارد. ویتامین B3 به پوست ظاهری درخش</p>
+            </div>
+        <!-- Instruction of Product-->
+            <div class=" w-6/6 h-auto border p-2 m-2 text-right flex justify-between items-center rounded-lg">
+                <i class="fa-solid fa-angle-down"></i>
+                <h1><strong>نحوه مصرف محصول</strong></h1>
+    
+            </div>
+        </section>
+        <!--Complementary products--->
+        <section>
+            <div>
+                <h1 class="text-right p-2">محصولات مکمل</h1>
+                <div class="warpper gap-2 ">
+                    <!-- Product Card 1-->
+                    <div class="grid grid-cols-2 h-auto w-1/6 lg:5/6 border rounded-lg justify-items-end  shadow-md	">
+                        <!-- col 1 -->
+                        <div class=" text-right py-4 ">
+                            <h2>کالیستا</h2>
+                            <p><strong>کانسیلر کالیستا مدل کاور آپ </strong></p><br>
+                            <p class="text-left">130.555تومان</p>
+                        </div>
+                        <!-- col 2 -->
+                        <div class="w-28 h-28 "><img src="img/khanoumi-pd1.jpg" alt="complete products"></div>
+                    </div>
+                    <!-- Product Card 1-->
+                    <div class="grid grid-cols-2 h-auto w-5/6 lg:5/6 border rounded-lg justify-items-end  shadow-md	">
+                        <!-- col 1 -->
+                        <div class=" text-right py-4 ">
+                            <h2>کالیستا</h2>
+                            <p><strong>کانسیلر کالیستا مدل کاور آپ </strong></p><br>
+                            <p class="text-left">130.555تومان</p>
+                        </div>
+                        <!-- col 2 -->
+                        <div class="w-28 h-28 "><img src="img/khanoumi-p2.jpg" alt="complete products"></div>
+                    </div>
+                    <!-- Product Card 1-->
+                    <div class="grid grid-cols-2 h-auto w-5/6 lg:5/6 border rounded-lg justify-items-end  shadow-md	">
+                        <!-- col 1 -->
+                        <div class=" text-right py-4 ">
+                            <h2>کالیستا</h2>
+                            <p><strong>کانسیلر کالیستا مدل کاور آپ </strong></p><br>
+                            <p class="text-left">130.555تومان</p>
+                        </div>
+                        <!-- col 2 -->
+                        <div class="w-28 h-28 "><img src="img/khanoumi-p2.jpg" alt="complete products"></div>
+                    </div>
+                    <!-- Product Card 1-->
+                    <div class="grid grid-cols-2 h-auto w-5/6 lg:5/6 border rounded-lg justify-items-end  shadow-md	">
+                        <!-- col 1 -->
+                        <div class=" text-right py-4 ">
+                            <h2>کالیستا</h2>
+                            <p><strong>کانسیلر کالیستا مدل کاور آپ </strong></p><br>
+                            <p class="text-left">130.555تومان</p>
+                        </div>
+                        <!-- col 2 -->
+                        <div class="w-28 h-28 "><img src="img/khanoumi-p2.jpg" alt="complete products"></div>
+                    </div>
+                </div>
+    
+            </div>
+        </section>
+        <!--- Comment --->
+        <section>
+            <div class="h-10 w-60 bg-gray-300"> hey parastoo</div>
+            <div class="h-auto w-6/6 border rounded-lg p-8 m-2 lg:w-4/6  ">
+                <!-- Header -->
+                <div class="flex justify-between items-center">
+                    <Button type="button" class="h-10 w-32 text-white border bg-pink-600 rounded py-2 px-4 font-normal"> افزودن دیدگاه</Button>
+                    <h1>دیدگاه کاربران</h1>
+                </div>
+                <!-- Comments -->
+                <div class="flex items-center gap-4 py-4 justify-end text-xs text-gray-400">
                     <div class="flex items-center gap-2">
                         <h2>232 دیدگاه</h2>
                         <i class="fa-solid fa-message"></i>
                     </div>
                     <div class="flex items-center gap-2">
-                        <h2>1010</h2>
-                        <i class="fa-solid fa-heart"></i>
-                    </div>
-                    <div class="flex items-center gap-2">
                         <h2>2.7</h2>
-                        <i class="fa-solid fa-star "></i>
+                        <i class="fa-solid fa-star text-yellow-500 "></i>
                     </div>
                 </div>
-                <div class="flex justify-end">
-                    <h2>50ml</h2>
-                    <h2> :سایز </h2>
-                </div>
+                <!-- Image of customers-->
                 <div>
-                    <h2> :رنگ</h2>
-                    <div class="flex gap-2 justify-end py-2 text-3xl">
-                        <i class="fa-solid fa-circle text-red-500"></i>
-                        <i class="fa-solid fa-circle text-yellow-300"></i>
-                        <i class="fa-solid fa-circle text-pink-400"></i>
-                        <i class="fa-solid fa-circle text-pink-800"></i>
+                    <div class="flex justify-between items-center">
+                        <p class="text-sm text-gray-600">7 تصویر</p>
+                        <h1>تصاویر خریداران</h1>
                     </div>
-                </div>
-            </div>
-            <!-- Info -->
-            <div class="grid text-sm text-gray-600  ">
-            <!-- Garanthy  -->
-           <div>
-                 <!-- Send Info -->
-                 <div class="w-6/6 h-12 border rounded-lg m-2 shadow-md lg:border-none lg:shadow-none   ">
-                    <div class="flex items-center gap-4 p-3 justify-end">
-                        <h2>ارسال از 3 روز دیگر</h2>
-                        <i class="fa-solid fa-truck"></i>
-                    </div>
-                </div>
-                     <!-- Backup Info-->
-                <div class="cols-span-1 w-6/6 h-auto border rounded-lg m-2 p-2 shadow-md lg:border-none lg:shadow-none  ">
-                    <div class="justify-end">
-                        <div class="flex items-center gap-4 justify-end">
-                            <h2>ضمانت اصالت کالا </h2>
-                            <i class="fa-solid fa-award"></i>
-                        </div>
-                        <div class="flex items-center gap-4 justify-end">
-                            <h2>ارسال رایگان با خرید بیش از 850 هزار تومان</h2>
-                            <i class="fa-solid fa-award"></i>
-                        </div>
-                        <div class="flex items-center gap-4 justify-end">
-                            <h2>بازگشت کالا تا ۷ روز طبق شرایط مرجوعی</h2>
-                            <i class="fa-solid fa-award"></i>
-                        </div>
-                    </div>
-                </div>
-           </div>
-
-            </div>
-        </div>
-    </section>
-    <!-- Introduce Product-->
-    <section>
-        <div class="w-6/6 h-auto border p-2 m-2 text-right rounded-lg">
-            <h1><strong>معرفی محصول</strong></h1>
-            <p >معرفی سی سی کرم فارماسی</p>
-            <p class="text-xs text-gray-600">ی سی کرم ها محصولاتی بسیار ملایم و سبک با خواص بسیار مفید برای پوست می‌باشند. این محصول پوشش بسیار خوبی بر روی پوست داشته و عیوب پوست را کاملا می‌پوشاند. روغن ماکادامیای موجود در این کرم برند معتبر فارماسی، پوست را در تمام روز مرطوب نگاه می‌دارد. ویتامین B3 به پوست ظاهری درخش</p>
-        </div>
-    <!-- Instruction of Product-->
-        <div class=" w-6/6 h-auto border p-2 m-2 text-right flex justify-between items-center rounded-lg">
-            <i class="fa-solid fa-angle-down"></i>
-            <h1><strong>نحوه مصرف محصول</strong></h1>
-
-        </div>
-    </section>
-    <!--Complementary products--->
-    <section>
-        <div>
-            <h1 class="text-right p-2">محصولات مکمل</h1>
-            <div class="warpper gap-2 ">
-                <!-- Product Card 1-->
-                <div class="grid grid-cols-2 h-auto w-1/6 lg:5/6 border rounded-lg justify-items-end  shadow-md	">
-                    <!-- col 1 -->
-                    <div class=" text-right py-4 ">
-                        <h2>کالیستا</h2>
-                        <p><strong>کانسیلر کالیستا مدل کاور آپ </strong></p><br>
-                        <p class="text-left">130.555تومان</p>
-                    </div>
-                    <!-- col 2 -->
-                    <div class="w-28 h-28 "><img src="img/khanoumi-pd1.jpg" alt="complete products"></div>
-                </div>
-                <!-- Product Card 1-->
-                <div class="grid grid-cols-2 h-auto w-5/6 lg:5/6 border rounded-lg justify-items-end  shadow-md	">
-                    <!-- col 1 -->
-                    <div class=" text-right py-4 ">
-                        <h2>کالیستا</h2>
-                        <p><strong>کانسیلر کالیستا مدل کاور آپ </strong></p><br>
-                        <p class="text-left">130.555تومان</p>
-                    </div>
-                    <!-- col 2 -->
-                    <div class="w-28 h-28 "><img src="img/khanoumi-p2.jpg" alt="complete products"></div>
-                </div>
-                <!-- Product Card 1-->
-                <div class="grid grid-cols-2 h-auto w-5/6 lg:5/6 border rounded-lg justify-items-end  shadow-md	">
-                    <!-- col 1 -->
-                    <div class=" text-right py-4 ">
-                        <h2>کالیستا</h2>
-                        <p><strong>کانسیلر کالیستا مدل کاور آپ </strong></p><br>
-                        <p class="text-left">130.555تومان</p>
-                    </div>
-                    <!-- col 2 -->
-                    <div class="w-28 h-28 "><img src="img/khanoumi-p2.jpg" alt="complete products"></div>
-                </div>
-                <!-- Product Card 1-->
-                <div class="grid grid-cols-2 h-auto w-5/6 lg:5/6 border rounded-lg justify-items-end  shadow-md	">
-                    <!-- col 1 -->
-                    <div class=" text-right py-4 ">
-                        <h2>کالیستا</h2>
-                        <p><strong>کانسیلر کالیستا مدل کاور آپ </strong></p><br>
-                        <p class="text-left">130.555تومان</p>
-                    </div>
-                    <!-- col 2 -->
-                    <div class="w-28 h-28 "><img src="img/khanoumi-p2.jpg" alt="complete products"></div>
-                </div>
-            </div>
-
-        </div>
-    </section>
-    <!--- Comment --->
-    <section>
-        <div class="h-auto w-6/6 border rounded-lg p-8 m-2 lg:w-4/6 lg:justify-end ">
-            <!-- Header -->
-            <div class="flex justify-between items-center">
-                <Button type="button" class="h-10 w-32 text-white border bg-pink-600 rounded py-2 px-4 font-normal"> افزودن دیدگاه</Button>
-                <h1>دیدگاه کاربران</h1>
-            </div>
-            <!-- Comments -->
-            <div class="flex items-center gap-4 py-4 justify-end text-xs text-gray-400">
-                <div class="flex items-center gap-2">
-                    <h2>232 دیدگاه</h2>
-                    <i class="fa-solid fa-message"></i>
-                </div>
-                <div class="flex items-center gap-2">
-                    <h2>2.7</h2>
-                    <i class="fa-solid fa-star text-yellow-500 "></i>
-                </div>
-            </div>
-            <!-- Image of customers-->
-            <div>
-                <div class="flex justify-between items-center">
-                    <p class="text-sm text-gray-600">7 تصویر</p>
-                    <h1>تصاویر خریداران</h1>
-                </div>
-                <!-- Image -->
-                <div class="flex py-3 gap-4 justify-end">
-                    <img src="img/customerImag.jpeg" alt="ccCream" class="h-14 w-14 rounded-lg">
-                    <img src="img/customerImag.jpeg" alt="ccCream" class="h-14 w-14 rounded-lg">
-                    <img src="img/customerImag.jpeg" alt="ccCream" class="h-14 w-14 rounded-lg">
-                    <img src="img/customerImag.jpeg" alt="ccCream" class="h-14 w-14 rounded-lg">
-                    <img src="img/customerImag.jpeg" alt="ccCream" class="h-14 w-14 rounded-lg">
-                    <img src="img/customerImag.jpeg" alt="ccCream" class="h-14 w-14 rounded-lg">
-
-                </div>
-            </div>
-            <hr>
-            <!--- Comment -->
-            <div>
-                <div class="text-right " >
-                    <div class="flex justify-between py-6">
-                        <h2>1403/2/5</h2>
-                        <h2>پرستو مجیدی</h2>
-                    </div>
-                    <p>لطفا شماره 3 رو موجود کنید میخوام خریدمو کامل کنم</p>
-                    <div class="flex gap-3 py-4 items-center">
-                        <div class="flex items-center gap-2 text-pink-600">
-                            <i class="fa-solid fa-thumbs-up"></i>
-                            <h1> 24 </h1>
-                        </div>
-                        <p class="text-gray-400 text-xs">این دیدگاه مفید بود؟</p>
+                    <!-- Image -->
+                    <div class="flex py-3 gap-4 justify-end">
+                        <img src="img/customerImag.jpeg" alt="ccCream" class="h-14 w-14 rounded-lg">
+                        <img src="img/customerImag.jpeg" alt="ccCream" class="h-14 w-14 rounded-lg">
+                        <img src="img/customerImag.jpeg" alt="ccCream" class="h-14 w-14 rounded-lg">
+                        <img src="img/customerImag.jpeg" alt="ccCream" class="h-14 w-14 rounded-lg">
+                        <img src="img/customerImag.jpeg" alt="ccCream" class="h-14 w-14 rounded-lg">
+                        <img src="img/customerImag.jpeg" alt="ccCream" class="h-14 w-14 rounded-lg">
+    
                     </div>
                 </div>
                 <hr>
-                <div class="text-right " >
-                    <div class="flex justify-between py-6">
-                        <h2>1403/2/5</h2>
-                        <h2>پرستو مجیدی</h2>
-                    </div>
-                    <p>بچه ها اونایی که دو واستون تیره و یک روشنه.از هردورنگ بگیرن ترکیب کنن خیلی رنگش قشنگ میشه. مرسی از خانومی خریدام به موقع به دستم رسید
-                    </p>
-                    <div class="flex gap-3 py-4 items-center">
-                        <div class="flex items-center gap-2 text-pink-600">
-                            <i class="fa-solid fa-thumbs-up"></i>
-                            <h1> 24 </h1>
+                <!--- Comment -->
+                <div>
+                    <div class="text-right " >
+                        <div class="flex justify-between py-6">
+                            <h2>1403/2/5</h2>
+                            <h2>پرستو مجیدی</h2>
                         </div>
-                        <p class="text-gray-400 text-xs">این دیدگاه مفید بود؟</p>
+                        <p>لطفا شماره 3 رو موجود کنید میخوام خریدمو کامل کنم</p>
+                        <div class="flex gap-3 py-4 items-center">
+                            <div class="flex items-center gap-2 text-pink-600">
+                                <i class="fa-solid fa-thumbs-up"></i>
+                                <h1> 24 </h1>
+                            </div>
+                            <p class="text-gray-400 text-xs">این دیدگاه مفید بود؟</p>
+                        </div>
+                    </div>
+                    <hr>
+                    <div class="text-right " >
+                        <div class="flex justify-between py-6">
+                            <h2>1403/2/5</h2>
+                            <h2>پرستو مجیدی</h2>
+                        </div>
+                        <p>بچه ها اونایی که دو واستون تیره و یک روشنه.از هردورنگ بگیرن ترکیب کنن خیلی رنگش قشنگ میشه. مرسی از خانومی خریدام به موقع به دستم رسید
+                        </p>
+                        <div class="flex gap-3 py-4 items-center">
+                            <div class="flex items-center gap-2 text-pink-600">
+                                <i class="fa-solid fa-thumbs-up"></i>
+                                <h1> 24 </h1>
+                            </div>
+                            <p class="text-gray-400 text-xs">این دیدگاه مفید بود؟</p>
+                        </div>
                     </div>
                 </div>
+                <!--- Pageination -->
+                <div>
+    
+                </div>
+                
+    
             </div>
-            <!--- Pageination -->
-            <div>
-
-            </div>
-            
-
-        </div>
+        </section>
     </section>
 </body>
 </html>
