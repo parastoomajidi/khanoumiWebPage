@@ -1,4 +1,4 @@
-<html lang="en">
+<html lang="en" dir="rtl">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -10,225 +10,199 @@
 
 </head>
 <body>
-    <div class="max-w-7xl mx-auto">
-        <!---- Header ---->
-        <section>
-            <div class="border w-full h-20 flex gap-4 py-4 justify-around ">
+        <!-- Header -->
+        <section class="mx-8">
+            <div class="w-full h-20 flex py-8 justify-between items-center p-8">
+                <!--- Right part of header--->
+                <div class="flex gap-4 items-center">
+                    <!---- Menu conditional in sm screen --->
+                    <div>
+                        <a href="index.html" class="md:hidden lg:hidden"><i class="fa-solid fa-bars"></i></a>
+                    </div>
+                    <!---- Brand Logo ---->
+                    <a href="index.html"><img src="img/logo.svg" alt="khanumiLogo" class="h-12 w-20"></a>
+        
+                </div>
                 <!--- Left part of header--->
-                <div class="flex gap-4">
+                <div class="flex gap-4 text-gray-700">
+                    <!---- Search Box conditional-->
+                    <div>
+                        <form class="hidden md:block lg:block lg:justify-items-end">
+                            <div class="relative">
+                                <input type="search" name="search" id="seach" placeholder="جست و جو کردن در همه محصولات خانومی" class="w-96 h-10 block p-4 ps-10 border rounded-lg bg-gray-50  ">
+                            <div class="absolute flex inset-y-0 start-0 items-center ps-3 pointer-events-non"><i class="fa-solid fa-magnifying-glass"></i></div>
+                            </div>
+                        </form>
+                        <form class="md:hidden lg:hidden" ><i class="fa-solid fa-magnifying-glass text-lg"></i></form>
+        
+                    </div>
+                    <!---- Login's Button-->
+                    <div>
+                        <a href="producDetail.html"> 
+                            <button type="button" class="text-lg  rounded-lg h-10 w-24 border-solid border-2 border-pink-600 text-pink-600 pointer-events-auto" >ورود
+                                <i class="fa-solid fa-arrow-right-to-bracket"></i>
+                            </button>
+                        </a>
+                    </div>
                     <!---- Carts -->
                     <div>
                         <i class="fa-brands fa-opencart text-black-600 text-3xl"></i>
                     </div>
-                    <!---- Login's Button-->
-                    <div>
-                        <button type="button" class="text-lg rounded-lg h-10 w-24 border-solid border-2 border-pink-600 text-pink-600 pointer-events-auto" >
-                            <a href="producDetail.html">ورود</a>
-                            <i class="fa-solid fa-arrow-right-to-bracket"></i>
-                        </button>
+                </div>
+            </div>   
+        </section>
+          <!--- Menu --->
+          <div>
+            <div class="w-full h-12 bg-gray-900 justify-around  hidden md:block ">
+                <ul class="flex text-white gap-4 items-center lg:font-normal text-base p-2 mx-16">
+                    <div class="flex gap-2 items-center text-white hover:text-pink-600">
+                        <i class="fa-solid fa-crown"></i>
+                        <li>پیشنهاد ویژه</li>
                     </div>
-                </div>
-                <!--- Right part of header--->
-                <div class="flex gap-4">
-                        <!---- Search Box-->
-                    <form>
-                        <div class="relative">
-                            <input type="search" name="search" id="seach" placeholder="جست و جو کردن در همه محصولات خانومی" class="w-full h-10 block  p-4 ps-10 border rounded-lg bg-gray-100  ">
-                        <div class="absolute flex inset-y-0 start-0 items-center ps-3 pointer-events-non"><i class="fa-solid fa-magnifying-glass"></i></div>
-                        </div>
-                    </form>
-                    <!---- Brand Logo ---->
-                    <img src="img/logo.svg" alt="khanumiLogo" class="h-12 w-20">
-
-                </div>
+                    <li>مجله خانومی</li>
+                    <li>مکمل غذایی و دارویی</li>
+                    <li>لوازم برقی شخصی</li>
+                    <li> اقایان</li>
+                    <li>عطر و ادکلن</li>
+                    <li>بهداشت شخصی</li>
+                    <li>مراقبت پوست</li>
+                    <li>مراقبت  مو</li>
+                    <li>آرایشی</li>
+                    <li>برند ها</li>
+                </ul>
+           
             </div>
-        </section>
-        <!--- Menu -->
-        <section>
-            <div>
-                <div class="flex w-full h-12 bg-gray-900 justify-around ">
-                    <ul class="flex text-white text-xs justify-end gap-4 items-center lg:font-normal lg:text-right  lg:text-sm">
-                        <li>مجله خانومی</li>
-                        <li>مکمل غذایی و دارویی</li>
-                        <li>لوازم برقی شخصی</li>
-                        <li> اقایان</li>
-                        <li>عطر و ادکلن</li>
-                        <li>بهداشت شخصی</li>
-                        <li>مراقبت پوست</li>
-                        <li>مراقبت  مو</li>
-                        <li>آرایشی</li>
-                        <li>برند ها</li>
-                        <div class="flex gap-2 items-center text-white hover:text-pink-600">
-                            <li>پیشنهاد ویژه</li>
-                            <i class="fa-solid fa-crown"></i>
-                        </div>
-                    </ul>
-               
-                </div>
-            </div>
-        </section>
+        </div>
+    <div class="max-w-7xl mx-auto">
         <!---- Body ---->
         <section>
             <div class="grid grid-cols-3 h-full">
-                <!---- Section Left ---->
-                <div class="h-fullgit col-span-2">
-                    <!-- Info -->
-                    <div class="flex justify-between p-4 ">
-                        <div class="flex items-center"><h1 >مرتب کردن</h1><i class="fa-solid fa-arrow-down-short-wide"></i></div>
-                        <h1>5.548 کالا</h1>
-                    </div>
-                    <!--- Cards --->
-                    <div class="grid grid-cols-1 justify-items-center md:cols-span-3 lg:grid-cols-3 gap-2 lg:p-2 ">
-                        <!-- card 1 -->
-                        <div class="grid grid-row h-72 w-60 p-4 mb-2 bg-white border rounded-lg lg:w-64 lg:h-80 ">
-                            <!-- row 1-->
-                            <div class="aspect-h-16 aspect-w-16 justify-self-center "><img src="img/khanoumi-p1.jpg" alt="productList"></div>
-                            <!-- row 2 -->
-                            <div class="text-right text-xs font-medium >
-                                <h1 class="text-xs text-gray-400">آنی لیدی</h1>
-                                <p class="mb-2" ><strong>پالت سایه چشم 25 رنگ مدل 02 <br>Forever Young آنی لیدی</strong></p><br>
-                                <p class="text-left ">13.800تومان</p>
-                            </div>
-    
-                        </div>
-                         <!-- card 1 -->
-                         <div class="grid grid-row h-72 w-60 p-4 mb-2 bg-white border rounded-lg lg:w-64 lg:h-80 ">
-                            <!-- row 1-->
-                            <div class="aspect-h-16 aspect-w-16 justify-self-center "><img src="img/khanoumi-p1.jpg" alt="productList"></div>
-                            <!-- row 2 -->
-                            <div class="text-right text-xs font-medium >
-                                <h1 class="text-xs text-gray-400">آنی لیدی</h1>
-                                <p class="mb-2" ><strong>پالت سایه چشم 25 رنگ مدل 02 <br>Forever Young آنی لیدی</strong></p><br>
-                                <p class="text-left ">13.800تومان</p>
-                            </div>
-    
-                        </div>
-                        <!-- card 1 -->
-                        <div class="grid grid-row h-72 w-60 p-4 mb-2 bg-white border rounded-lg lg:w-64 lg:h-80 ">
-                            <!-- row 1-->
-                            <div class="aspect-h-16 aspect-w-16 justify-self-center "><img src="img/khanoumi-p1.jpg" alt="productList"></div>
-                            <!-- row 2 -->
-                            <div class="text-right text-xs font-medium >
-                                <h1 class="text-xs text-gray-400">آنی لیدی</h1>
-                                <p class="mb-2" ><strong>پالت سایه چشم 25 رنگ مدل 02 <br>Forever Young آنی لیدی</strong></p><br>
-                                <p class="text-left ">13.800تومان</p>
-                            </div>
-    
-                        </div>
-                        <!-- card 1 -->
-                        <div class="grid grid-row h-72 w-60 p-4 mb-2 bg-white border rounded-lg lg:w-64 lg:h-80 ">
-                            <!-- row 1-->
-                            <div class="aspect-h-16 aspect-w-16 justify-self-center "><img src="img/khanoumi-p1.jpg" alt="productList"></div>
-                            <!-- row 2 -->
-                            <div class="text-right text-xs font-medium >
-                                <h1 class="text-xs text-gray-400">آنی لیدی</h1>
-                                <p class="mb-2" ><strong>پالت سایه چشم 25 رنگ مدل 02 <br>Forever Young آنی لیدی</strong></p><br>
-                                <p class="text-left ">13.800تومان</p>
-                            </div>
-    
-                        </div>
-                         <!-- card 1 -->
-                         <div class="grid grid-row h-72 w-60 p-4 mb-2 bg-white border rounded-lg lg:w-64 lg:h-80 ">
-                            <!-- row 1-->
-                            <div class="aspect-h-16 aspect-w-16 justify-self-center "><img src="img/khanoumi-p1.jpg" alt="productList"></div>
-                            <!-- row 2 -->
-                            <div class="text-right text-xs font-medium >
-                                <h1 class="text-xs text-gray-400">آنی لیدی</h1>
-                                <p class="mb-2" ><strong>پالت سایه چشم 25 رنگ مدل 02 <br>Forever Young آنی لیدی</strong></p><br>
-                                <p class="text-left ">13.800تومان</p>
-                            </div>
-    
-                        </div>
-                        <!-- card 1 -->
-                        <div class="grid grid-row h-72 w-60 p-4 mb-2 bg-white border rounded-lg lg:w-64 lg:h-80 ">
-                            <!-- row 1-->
-                            <div class="aspect-h-16 aspect-w-16 justify-self-center "><img src="img/khanoumi-p1.jpg" alt="productList"></div>
-                            <!-- row 2 -->
-                            <div class="text-right text-xs font-medium >
-                                <h1 class="text-xs text-gray-400">آنی لیدی</h1>
-                                <p class="mb-2" ><strong>پالت سایه چشم 25 رنگ مدل 02 <br>Forever Young آنی لیدی</strong></p><br>
-                                <p class="text-left ">13.800تومان</p>
-                            </div>
-    
-                        </div>
-                        <!-- card 1 -->
-                        <div class="grid grid-row h-72 w-60 p-4 mb-2 bg-white border rounded-lg lg:w-64 lg:h-80 ">
-                            <!-- row 1-->
-                            <div class="aspect-h-16 aspect-w-16 justify-self-center "><img src="img/khanoumi-p1.jpg" alt="productList"></div>
-                            <!-- row 2 -->
-                            <div class="text-right text-xs font-medium >
-                                <h1 class="text-xs text-gray-400">آنی لیدی</h1>
-                                <p class="mb-2" ><strong>پالت سایه چشم 25 رنگ مدل 02 <br>Forever Young آنی لیدی</strong></p><br>
-                                <p class="text-left ">13.800تومان</p>
-                            </div>
-    
-                        </div>
-                         <!-- card 1 -->
-                         <div class="grid grid-row h-72 w-60 p-4 mb-2 bg-white border rounded-lg lg:w-64 lg:h-80 ">
-                            <!-- row 1-->
-                            <div class="aspect-h-16 aspect-w-16 justify-self-center "><img src="img/khanoumi-p1.jpg" alt="productList"></div>
-                            <!-- row 2 -->
-                            <div class="text-right text-xs font-medium >
-                                <h1 class="text-xs text-gray-400">آنی لیدی</h1>
-                                <p class="mb-2" ><strong>پالت سایه چشم 25 رنگ مدل 02 <br>Forever Young آنی لیدی</strong></p><br>
-                                <p class="text-left ">13.800تومان</p>
-                            </div>
-    
-                        </div>
-                        <!-- card 1 -->
-                        <div class="grid grid-row h-72 w-60 p-4 mb-2 bg-white border rounded-lg lg:w-64 lg:h-80 ">
-                            <!-- row 1-->
-                            <div class="aspect-h-16 aspect-w-16 justify-self-center "><img src="img/khanoumi-p1.jpg" alt="productList"></div>
-                            <!-- row 2 -->
-                            <div class="text-right text-xs font-medium >
-                                <h1 class="text-xs text-gray-400">آنی لیدی</h1>
-                                <p class="mb-2" ><strong>پالت سایه چشم 25 رنگ مدل 02 <br>Forever Young آنی لیدی</strong></p><br>
-                                <p class="text-left ">13.800تومان</p>
-                            </div>
-    
-                        </div>
-                   
-                    </div>
-                
-                </div>
-                
                 <!---- Section Right ---->
-                <div class=" h-full col-span-1 h-full  lg:w-4/6 justify-around  ">
+                <div class="h-full col-span-1 h-full lg:w-4/6 justify-around hidden md:block lg:block  ">
                     <h1 class="text-right p-4 text-lg font-semibold">آرایشی</h1>
                        <div>
                         <ul class="p-4 mb-4 text-sm text-right lg:font-medium ">
                             <li  class="mb-3">بادی میکاپ (19)</li>
                             <li class="mb-3">ست های آرایشی (55)</li>
                             <li class="mb-3">برنزه کردن (122)</li>
-                            <li class="mb-3">(5) آرایش ابرو</li>
-                            <li class="mb-3">(122) ارایش لب</li>
-                            <li class="mb-3">(1369) آرایش صورت</li>
-                            <li class="mb-3">(80) آرایش چشم</li>
+                            <li class="mb-3">برنزه کردن (122)</li>
+                            <li class="mb-3">برنزه کردن (122)</li>
                             <li class="mb-3">ابزارآرایشی (1.222)</li>
+                            <li class="mb-3">ابزارآرایشی (1.222)</li>
+                            <li class="mb-3">لوازم(1.222)</li>
                         </ul>
                        </div>
                        <!--- Filters Section --->
-                       <div class="border shadow bg-gray-100 p-4 m-0.5  ">
+                       <div class="border shadow bg-gray-100 p-4 m-0.5 ">
                         <h1 class="text-pink-400  hover:text-pink-600 mb-4">حذف فیلترها</h1>
                         <div class="flex items-center justify-between mb-4">
-                            <input type="checkbox" name="itemsCheck" id="checkChek" class="w-4 h-4 border bg-gray-300 rounded">
                             <label for="checkbox" class=" flex ms-2 text-sm font-medium text-gray-800 ">فقط کالای موجود</label>
+                            <input type="checkbox" name="itemsCheck" id="checkChek" class="w-4 h-4 border bg-gray-300 rounded">
                         </div>
                         <hr>
                         <ul >
-                            <div class="flex justify-between my-4 "><i class="fa-solid fa-angle-down"></i><h2>برند</h2></div><hr>
-                            <div class="flex justify-between my-4 "><i class="fa-solid fa-angle-down"></i><h2>قیمت</h2></div><hr>
-                            <div class="flex justify-between my-4 "><i class="fa-solid fa-angle-down"></i><h2>رنگ‌ها</h2></div><hr>
-                            <div class="flex justify-between my-4 "><i class="fa-solid fa-angle-down"></i><h2>جلوه نهایی</h2></div><hr>
-                            <div class="flex justify-between my-4 "><i class="fa-solid fa-angle-down"></i><h2> مراقبت مو</h2></div><hr>
-                            <div class="flex justify-between my-4 "><i class="fa-solid fa-angle-down"></i><h2>SPF</h2></div><hr>
-                            <div class="flex justify-between my-4 "><i class="fa-solid fa-angle-down"></i><h2>ویژگی خاص</h2></div><hr>
-                            <div class="flex justify-between my-4 "><i class="fa-solid fa-angle-down"></i><h2>نیاز به آبکشی</h2></div><hr>
-                            <div class="flex justify-between my-4 "><i class="fa-solid fa-angle-down"></i><h2>مزیت آرایشی</h2></div><hr>
-                            <div class="flex justify-between my-4 "><i class="fa-solid fa-angle-down"></i><h2>کاربرد براش</h2></div>
+                            <div class="flex justify-between my-4 "><h2>برند</h2> <i class="fa-solid fa-angle-down"></i></div><hr>
+                            <div class="flex justify-between my-4 "><h2>برند</h2> <i class="fa-solid fa-angle-down"></i></div><hr>
+                            <div class="flex justify-between my-4 "><h2>برند</h2> <i class="fa-solid fa-angle-down"></i></div><hr>
+                            <div class="flex justify-between my-4 "><h2>برند</h2> <i class="fa-solid fa-angle-down"></i></div><hr>
+                            <div class="flex justify-between my-4 "><h2>برند</h2> <i class="fa-solid fa-angle-down"></i></div><hr>
+                            <div class="flex justify-between my-4 "><h2>برند</h2> <i class="fa-solid fa-angle-down"></i></div><hr>
+                            <div class="flex justify-between my-4 "><h2>برند</h2> <i class="fa-solid fa-angle-down"></i></div><hr>
+                            <div class="flex justify-between my-4 "><h2>برند</h2> <i class="fa-solid fa-angle-down"></i></div><hr>
+                            <div class="flex justify-between my-4 "><h2>برند</h2> <i class="fa-solid fa-angle-down"></i></div><hr>  
                         </ul>
                        </div>
              
+                </div>
+                <!---- Section Left ---->
+                <div class="h-fullgit col-span-3 md:col-span-2">
+                    <!-- Info -->
+                    <div class="flex justify-between p-4 ">
+                        <h1>5.548 کالا</h1>
+                        <div class="flex items-center gap-2"><h1 >مرتب کردن</h1><i class="fa-solid fa-arrow-down-short-wide"></i></div>
+                    </div>
+                    <!--- Cards --->
+                    <div class="grid grid-cols-2 justify-items-center md:cols-span-3 lg:grid-cols-3 gap-4 lg:p-2 ">
+                        <!-- card 1 -->
+                       <a href="producDetail.html">
+                        <div class="grid grid-row h-72 w-60 p-4 mb-2 bg-white border rounded-lg lg:w-64 lg:h-80 ">
+                            <!-- row 1-->
+                            <div class="aspect-h-16 aspect-w-16 justify-self-center "><img src="img/khanoumi-p1.jpg" alt="productList"></div>
+                            <!-- row 2 -->
+                            <div class="text-right text-xs font-medium >
+                                <h1 class="text-xs text-gray-400">آنی لیدی</h1>
+                                <p class="mb-2" ><strong>پالت سایه چشم 25 رنگ مدل 02 <br>Forever Young آنی لیدی</strong></p><br>
+                                <p class="text-left ">13.800تومان</p>
+                            </div>
+                        </div>
+                       </a>
+                       <!-- card 1 -->
+                       <a href="producDetail.html">
+                        <div class="grid grid-row h-72 w-60 p-4 mb-2 bg-white border rounded-lg lg:w-64 lg:h-80 ">
+                            <!-- row 1-->
+                            <div class="aspect-h-16 aspect-w-16 justify-self-center "><img src="img/khanoumi-p1.jpg" alt="productList"></div>
+                            <!-- row 2 -->
+                            <div class="text-right text-xs font-medium >
+                                <h1 class="text-xs text-gray-400">آنی لیدی</h1>
+                                <p class="mb-2" ><strong>پالت سایه چشم 25 رنگ مدل 02 <br>Forever Young آنی لیدی</strong></p><br>
+                                <p class="text-left ">13.800تومان</p>
+                            </div>
+                        </div>
+                       </a>
+                        <!-- card 1 -->
+                        <a href="producDetail.html">
+                            <div class="grid grid-row h-72 w-60 p-4 mb-2 bg-white border rounded-lg lg:w-64 lg:h-80 ">
+                                <!-- row 1-->
+                                <div class="aspect-h-16 aspect-w-16 justify-self-center "><img src="img/khanoumi-p1.jpg" alt="productList"></div>
+                                <!-- row 2 -->
+                                <div class="text-right text-xs font-medium >
+                                    <h1 class="text-xs text-gray-400">آنی لیدی</h1>
+                                    <p class="mb-2" ><strong>پالت سایه چشم 25 رنگ مدل 02 <br>Forever Young آنی لیدی</strong></p><br>
+                                    <p class="text-left ">13.800تومان</p>
+                                </div>
+                            </div>
+                           </a>
+                           <!-- card 1 -->
+                           <a href="producDetail.html">
+                            <div class="grid grid-row h-72 w-60 p-4 mb-2 bg-white border rounded-lg lg:w-64 lg:h-80 ">
+                                <!-- row 1-->
+                                <div class="aspect-h-16 aspect-w-16 justify-self-center "><img src="img/khanoumi-p1.jpg" alt="productList"></div>
+                                <!-- row 2 -->
+                                <div class="text-right text-xs font-medium >
+                                    <h1 class="text-xs text-gray-400">آنی لیدی</h1>
+                                    <p class="mb-2" ><strong>پالت سایه چشم 25 رنگ مدل 02 <br>Forever Young آنی لیدی</strong></p><br>
+                                    <p class="text-left ">13.800تومان</p>
+                                </div>
+                            </div>
+                           </a>
+                            <!-- card 1 -->
+                       <a href="producDetail.html">
+                        <div class="grid grid-row h-72 w-60 p-4 mb-2 bg-white border rounded-lg lg:w-64 lg:h-80 ">
+                            <!-- row 1-->
+                            <div class="aspect-h-16 aspect-w-16 justify-self-center "><img src="img/khanoumi-p1.jpg" alt="productList"></div>
+                            <!-- row 2 -->
+                            <div class="text-right text-xs font-medium >
+                                <h1 class="text-xs text-gray-400">آنی لیدی</h1>
+                                <p class="mb-2" ><strong>پالت سایه چشم 25 رنگ مدل 02 <br>Forever Young آنی لیدی</strong></p><br>
+                                <p class="text-left ">13.800تومان</p>
+                            </div>
+                        </div>
+                       </a>
+                       <!-- card 1 -->
+                       <a href="producDetail.html">
+                        <div class="grid grid-row h-72 w-60 p-4 mb-2 bg-white border rounded-lg lg:w-64 lg:h-80 ">
+                            <!-- row 1-->
+                            <div class="aspect-h-16 aspect-w-16 justify-self-center "><img src="img/khanoumi-p1.jpg" alt="productList"></div>
+                            <!-- row 2 -->
+                            <div class="text-right text-xs font-medium >
+                                <h1 class="text-xs text-gray-400">آنی لیدی</h1>
+                                <p class="mb-2" ><strong>پالت سایه چشم 25 رنگ مدل 02 <br>Forever Young آنی لیدی</strong></p><br>
+                                <p class="text-left ">13.800تومان</p>
+                            </div>
+                        </div>
+                       </a>
+                    </div>
+                
                 </div>
             </div>
         </section>
